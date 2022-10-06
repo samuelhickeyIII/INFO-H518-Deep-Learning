@@ -290,7 +290,8 @@ def model(
             (num_px * num_px, m_train)
     Y_train -- training labels represented by a numpy array (vector) of
             shape (1, m_train)
-    X_test -- test set represented by a numpy array of shape (num_px * num_px, m_test)
+    X_test -- test set represented by a numpy array of shape 
+            (num_px * num_px, m_test)
     Y_test -- test labels represented by a numpy array (vector) of shape (1, m_test)
     num_iterations -- hyperparameter representing the number of iterations to optimize the parameters
     learning_rate -- hyperparameter representing the learning rate used in the update rule of optimize()
