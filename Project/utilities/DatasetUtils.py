@@ -39,7 +39,7 @@ def create_sequences(
 		labels_dense = sequences[-1]
 		labels = {key:labels_dense[i] for i,key in enumerate(keys)}
 
-		return scale_pitch(inputs), labels
+		return inputs, labels
 
 	return sequences.map(split_labels, num_parallel_calls=tf.data.AUTOTUNE)
 
