@@ -30,7 +30,7 @@ def create_sequences(
 
 	# Normalize note pitch
 	def scale_pitch(x):
-		x = x/[vocab_size, 1.0, 1.0, 1.0, 1.0]
+		x = x/[vocab_size, 1.0, 1.0]
 		return x
 
 	# Split the labels
