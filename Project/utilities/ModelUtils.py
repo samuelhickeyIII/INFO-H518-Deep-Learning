@@ -24,9 +24,6 @@ def predict_next_note(
     pitch_logits = predictions['pitch']
     start = predictions['start']
     end = predictions['end']
-    step = predictions['step']
-    duration = predictions['duration']
-
     pitch_logits /= temperature
     pitch = tf.random.categorical(pitch_logits, num_samples=1)
     pitch = tf.squeeze(pitch, axis=-1)
